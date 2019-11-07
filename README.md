@@ -9,11 +9,17 @@ Project Organization
     ├── LICENSE
     ├── Makefile           <- コマンド実行用のファイル (例)`make data` `make train`
     ├── README.md          
+    │
+    ├── config             <- 特徴量の制限など、コンフィグファイル.
+    │   └── default.json   
+    │
     ├── data
     │   ├── external       <- 外部、サードパーティのソースからのデータ.
     │   ├── interim        <- 暫定、加工された中間データ.
     │   ├── processed      <- 処理済み、モデリング用の最終的な標準データセット.
     │   └── raw            <- 元の不変のデータダンプ.
+    │
+    ├── logs               <- ログデータを残すフォルダ.
     │
     ├── docs               <- デフォルトのSphinxプロジェクト. 詳細については、sphinx-doc.orgを参照.
     │
@@ -28,7 +34,7 @@ Project Organization
     │   └── figures        <- レポートで使用される生成されたグラフィックと図
     │
     ├── requirements.txt   <- 分析環境を再現するための要件ファイル, 
-    │                         (例) generated with `pip freeze > requirements.txt`
+    │                         インストールが必要なモジュール. setup.pyの実行にてインストールされる.
     │
     ├── setup.py           <- プロジェクトのpipをインストール可能にする (pip install -e .)
     ├── src                <- このプロジェクトで使用するソースコード.

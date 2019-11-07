@@ -1,4 +1,9 @@
-from setuptools import find_packages, setup
+from setuptools import setup
+from setuptools import find_packages
+
+
+def _requires_from_file(filename):
+    return open(filename).read().splitlines()
 
 setup(
     name='src',
@@ -7,4 +12,5 @@ setup(
     description='data_mining_ml',
     author='sueyama',
     license='MIT',
+    install_requires=_requires_from_file('requirements.txt')
 )

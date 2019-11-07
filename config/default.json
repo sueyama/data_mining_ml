@@ -1,0 +1,15 @@
+{
+    "features" : [
+        "feature1",
+        "feature1"
+    ],
+    "target_name:" : "target1",
+    "class_name" : [
+        "classA",
+        "classB"
+    ],
+    "categorical_features" : [
+        "categoricalA",
+        "categoricalB"
+    ]    
+}
